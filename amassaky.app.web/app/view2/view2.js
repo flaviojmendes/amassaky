@@ -9,6 +9,20 @@ angular.module('myApp.view2', ['ngRoute'])
   });
 }])
 
-.controller('View2Ctrl', [function() {
+.controller('View2Ctrl', ['$scope','$location', 'minhaService', function($scope, $location, minhaService) {
 
+var validarUsuario = fucntion(){
+
+}
+
+$scope.cadastrarCliente = function(){
+	console.log($scope.user);
+}
+
+
+//	$scope.redirect = function(){
+//		minhaService.get({}).then(function(data){
+//			$scope.view2Content = data;
+//		});
+//	}
 }]);

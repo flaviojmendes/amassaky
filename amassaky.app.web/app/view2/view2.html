@@ -1,3 +1,42 @@
-<p>This is the partial for view 2.</p>
-<p>
-</p>
+<p><h1>Cadastro de cliente</h1></p>
+<form ng-submit="cadastrarCliente()">
+<div>
+	<span>NOME</span>
+	<input type="text" ng-model="user.nome" name="">
+</div>
+<div>
+	<span>CPF</span>
+	<input type="text" ng-model="user.cpf" name="">
+</div>
+<div>
+	<span>TELEFONE</span>
+	<input type="number" ng-model="user.telefone" name="">
+</div>
+<div>
+	<span>CARTÃO</span>
+	<input type="number" ng-model="user.cartao" name="">
+</div>
+<div>
+	<span>CVV</span>
+	<input type="number" ng-model="user.cvv" name="">
+</div>
+<div>
+	<span>VENCIMENTO</span>
+	<input type="text" ng-model="user.vencimento" name="">
+</div>
+<div>
+	<span>EMAIL</span>
+	<input type="email" ng-model="user.email" name="">
+</div>
+<div>
+	<span>SENHA</span>
+	<input type="password" ng-model="user.senha" name="">
+</div>
+<div>
+	<span>TERMOS</span>
+	<input type="check" ng-model="termos">
+</div>
+
+<input type="submit" value="Cadastrar">
+
+</form>
