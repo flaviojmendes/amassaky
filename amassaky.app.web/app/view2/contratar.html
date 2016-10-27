@@ -16,7 +16,7 @@
 </div>
 
 <div ng-repeat="massagista in massagistas | filter:massagem.tipo ">
-<span> <i><img src="massagista.img"></i> 	</span>
+<span> <i><img src={{massagista.img}}></i> 	</span>
 <label ng-bind="massagista.nome"></label>
 <label ng-bind="massagista.especialidade"></label>
 <label ng-bind="massagista.avaliacao"></label>

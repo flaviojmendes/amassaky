@@ -47,14 +47,14 @@ $scope.cadastrarCliente = function(){
 		especialidade: "tantrica",
 		email: "joelma@gmail.com",
 		sexo: "f",
-		img : "../sources/image/Capture2"
+		img : "Capture2.png"
 	},{
 		nome : "mario",
 		avaliacao : 5,
 		especialidade: "tailandesa",
 		email: "mario@gmail.com",
 		sexo:"m",
-		img : "../sources/image/Capture"
+		img : "Capture.png"
 	}];
 $scope.massagistas = [massagistas[0]];
 	$scope.filterMassagista = function(sexo){
