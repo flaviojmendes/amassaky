@@ -34,13 +34,10 @@ dependencies {
     compile group: 'mysql', name: 'mysql-connector-java'
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-starter-jetty")
+    // https://mvnrepository.com/artifact/javax.mail/mail
+    compile group: 'javax.mail', name: 'mail', version: '1.4.7'
 
     testCompile("junit:junit")
-
-    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-test-autoconfigure
-    compile group: 'org.springframework.boot', name: 'spring-boot-test-autoconfigure', version: '1.4.1.RELEASE'
-    // https://mvnrepository.com/artifact/org.springframework/spring-test
-    compile group: 'org.springframework', name: 'spring-test', version: '4.3.3.RELEASE'
 
 
 
