@@ -18,6 +18,9 @@ public class ClienteService {
         if(cliente.getCpf() == null || cliente.getCpf().equals("")) {
             throw new Exception("CPF Obrigatório");
         }
+        if(cliente.getNome() == null || cliente.getNome().equals("")) {
+            throw new Exception("Nome Obrigatório");
+        }
         clienteRepository.save(cliente);
     }
 
