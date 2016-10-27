@@ -1,0 +1,52 @@
+group 'es.flaviojmend'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.5.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'es.flaviojmend.Main'
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile group: 'mysql', name: 'mysql-connector-java'
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("org.springframework.boot:spring-boot-starter-jetty")
+
+    testCompile("junit:junit")
+
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.4.1.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-test-autoconfigure
+    compile group: 'org.springframework.boot', name: 'spring-boot-test-autoconfigure', version: '1.4.1.RELEASE'
+    // https://mvnrepository.com/artifact/org.springframework/spring-test
+    compile group: 'org.springframework', name: 'spring-test', version: '4.3.3.RELEASE'
+
+
+
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.4'
+}
