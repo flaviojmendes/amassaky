@@ -7,14 +7,14 @@ import es.flaviojmend.persistence.entity.Cliente;
  */
 public class ContratacaoCommand {
 
-    private Cliente cliente;
+    private Long idCliente;
 
-    public Cliente getCliente() {
-        return cliente;
+    public Long getIdCliente() {
+        return idCliente;
     }
 
-    public void setCliente(Cliente cliente) {
-        this.cliente = cliente;
+    public void setIdCliente(Long idCliente) {
+        this.idCliente = idCliente;
     }
 
     public String getEspecialidade() {

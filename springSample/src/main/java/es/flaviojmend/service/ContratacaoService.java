@@ -35,7 +35,7 @@ public class ContratacaoService {
 
         Contratacao contratacao = new Contratacao();
 
-        Cliente cliente = clienteRepository.findOne(contratacaoCommand.getCliente().getIdCliente());
+        Cliente cliente = clienteRepository.findOne(contratacaoCommand.getIdCliente());
 
         contratacao.setCliente(cliente);
         contratacao.setMassagista(massagistas.get(0));
