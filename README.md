@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### Board
 
 ##### How to start environment
@@ -8,3 +9,6 @@
 ###### Execute:
 
       sudo docker-compose up -d
+=======
+# amassaky
+>>>>>>> 5c778d543ec6ddbb2cfdcbcb65d892b5a04edffa
