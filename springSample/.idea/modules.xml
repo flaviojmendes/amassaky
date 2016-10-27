@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springSample.iml" filepath="$PROJECT_DIR$/.idea/modules/springSample.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/springSample_main.iml" filepath="$PROJECT_DIR$/.idea/modules/springSample_main.iml" group="springSample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/springSample_test.iml" filepath="$PROJECT_DIR$/.idea/modules/springSample_test.iml" group="springSample" />
     </modules>
   </component>
 </project>
