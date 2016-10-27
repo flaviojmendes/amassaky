@@ -10,10 +10,10 @@ import javax.persistence.Id;
 public class Massagista {
 
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long idMassagista;
 
-   // private String cpf;
+    // private String cpf;
 
 
     public Long getIdMassagista() {
@@ -62,11 +62,21 @@ public class Massagista {
 
     private String email;
 
-   // private String senha;
+    // private String senha;
 
-  //  private String telefone;
+    //  private String telefone;
 
     private String especialidade;
 
     private Integer nota;
+
+    public String getSexo() {
+        return sexo;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    private String sexo;
 }

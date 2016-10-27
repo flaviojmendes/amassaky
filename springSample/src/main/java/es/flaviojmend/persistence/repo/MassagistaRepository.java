@@ -11,7 +11,7 @@ import java.util.List;
  */
 public interface MassagistaRepository extends CrudRepository<Massagista, Long> {
 
-    List<Massagista> findByEspecialidade(String especialidade);
+    List<Massagista> findByEspecialidadeAndSexo(String especialidade, String sexo);
 
 
 
