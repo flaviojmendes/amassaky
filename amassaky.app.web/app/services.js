@@ -15,7 +15,7 @@
     self.insert = function(params){
     	return $http({
     		method : 'post',
-    		url : '/api/get',
+    		url : 'http://localhost:8080/cliente',
     		data : params
     	})
     }
