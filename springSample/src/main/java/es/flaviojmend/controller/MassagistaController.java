@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
  */
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("/massagista")
 public class MassagistaController {
 
 
