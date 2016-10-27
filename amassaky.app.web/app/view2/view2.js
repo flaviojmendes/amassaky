@@ -6,7 +6,12 @@ angular.module('myApp.view2', ['ngRoute'])
   $routeProvider.when('/view2', {
     templateUrl: 'view2/view2.html',
     controller: 'View2Ctrl'
-  });
+  })
+  .when('/contratar', {
+    templateUrl: 'view2/contratar.html',
+    controller: 'ContratarCtrl'
+  })
+  ;
 }])
 
 .controller('View2Ctrl', ['$scope','$location', 'minhaService', function($scope, $location, minhaService) {
@@ -29,4 +34,9 @@ console.log($scope.myForm);
 //			$scope.view2Content = data;
 //		});
 //	}
-}]);
+}])
+
+.controller('ContratarCtrl', ['$scope','$location', 'minhaService', function($scope, $location, minhaService) {
+
+}])
+;
