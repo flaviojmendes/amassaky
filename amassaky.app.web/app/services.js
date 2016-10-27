@@ -20,6 +20,14 @@
     	})
     }
 
+    self.contratacao = function(params){
+        return $http({
+            method : 'post',
+            url : 'http://localhost:8080/contratacao',
+            data : params
+        })
+    }
+
     self.update = function(params){
     	return $http({
     		method : 'put',

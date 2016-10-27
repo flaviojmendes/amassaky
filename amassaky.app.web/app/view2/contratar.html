@@ -1,7 +1,28 @@
 <h1>Contratar Massagista</h1>
+<form>	
 <div>
 <label for="radioM">homem</label>
-<input type="radio" ng-model="massagista.sexo" id="radioM" ng-value="m" name="sexoradio">
+<input type="radio" ng-model="massagem.sexo" ng-click="filterMassagista('m')" id="radioM" ng-value="m" name="sexoradio">
 <label for="radioF">mulher</label>
-<input type="radio" ng-model="massagista.sexo" id="radioF" ng-value="f" name="sexoradio">
+<input type="radio" ng-model="massagem.sexo" ng-click="filterMassagista('f')" id="radioF" ng-value="f" name="sexoradio">
 </div>
+<div>	
+<select ng-model="massagem.tipo">
+	<option ng-value="tantrica">Tantrica</option>
+	<option ng-value="ayurvedica">Ayurvédica</option>
+	<option ng-value="tailandesa">Tailandesa</option>
+	<option ng-value="quick">Quick</option>
+</select>
+</div>
+
+<div ng-repeat="massagista in massagistas | filter:massagem.tipo ">
+<span> <i><img src="massagista.img"></i> 	</span>
+<label ng-bind="massagista.nome"></label>
+<label ng-bind="massagista.especialidade"></label>
+<label ng-bind="massagista.avaliacao"></label>
+
+<button ng-click="contratar(massagista)"> Contratar </button>
+
+</div>
+
+</form>

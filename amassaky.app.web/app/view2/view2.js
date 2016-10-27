@@ -18,14 +18,16 @@ angular.module('myApp.view2', ['ngRoute'])
 
 $scope.cadastrarCliente = function(){
 
-console.log($scope.myForm);
-
 	minhaService.insert($scope.user).then(function(){
 
 		alert("cadastrado com sucesso");
 
-	})
-	console.log($scope.user);
+		$location.path("/contratar");
+	},
+	function(data){
+		alert("erro ao cadastrar "+ data);
+	} 
+	)
 }
 
 
@@ -36,7 +38,44 @@ console.log($scope.myForm);
 //	}
 }])
 
-.controller('ContratarCtrl', ['$scope','$location', 'minhaService', function($scope, $location, minhaService) {
+.controller('ContratarCtrl', ['$scope','$location', 'minhaService', '$window', function($scope, $location, minhaService, $window) {
+	$scope.massagistas = {};
+	var massagistas = [
+	{
+		nome : "joelma",
+		avaliacao : 5,
+		especialidade: "tantrica",
+		email: "joelma@gmail.com",
+		sexo: "f",
+		img : "../sources/image/Capture2"
+	},{
+		nome : "mario",
+		avaliacao : 5,
+		especialidade: "tailandesa",
+		email: "mario@gmail.com",
+		sexo:"m",
+		img : "../sources/image/Capture"
+	}];
+$scope.massagistas = [massagistas[0]];
+	$scope.filterMassagista = function(sexo){
+		if(sexo == "m"){
+			$scope.massagistas = [massagistas[1]];
+		}else{
+			$scope.massagistas = [massagistas[0]];
+		}
+	}
+
+	$scope.contratar = function(massagista){
+		massagista.idCliente = 1;
+console.log(massagista);
+var confirmacao = $window.confirm("você tem certeza que deseja contratar esse serviço?")
+
+if(confirmacao){
+		minhaService.contratacao(massagista).then(function(){
+			alert("contratacao efetuada com sucesso")
+		});
+	}
+}
 
 }])
 ;
