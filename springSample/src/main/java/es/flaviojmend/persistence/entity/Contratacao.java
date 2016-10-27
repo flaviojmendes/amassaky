@@ -11,9 +11,11 @@ public class Contratacao {
     private Long idContratacao;
 
     @ManyToOne
+    @JoinColumn(name = "id_cliente")
     private Cliente cliente;
 
     @ManyToOne
+    @JoinColumn(name = "id_massagista")
     private Massagista massagista;
 
     public Long getIdContratacao() {

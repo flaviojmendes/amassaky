@@ -22,15 +22,22 @@ public class ContratacaoService {
     ContratacaoRepository contratacaoRepository;
 
     @Autowired
+    ClienteRepository clienteRepository;
+
+    @Autowired
     MassagistaRepository massagistaRepository;
 
     public void contratarServico(ContratacaoCommand contratacaoCommand) throws Exception {
 
-        List<Massagista> massagistas = massagistaRepository.findByEspecialidade(contratacaoCommand.getEspecialidade());
+        List<Massagista> massagistas = massagistaRepository
+                .findByEspecialidadeAndSexo(contratacaoCommand.getEspecialidade(),
+                        contratacaoCommand.getSexo());
 
         Contratacao contratacao = new Contratacao();
 
-        contratacao.setCliente(contratacaoCommand.getCliente());
+        Cliente cliente = clienteRepository.findOne(contratacaoCommand.getIdCliente());
+
+        contratacao.setCliente(cliente);
         contratacao.setMassagista(massagistas.get(0));
 
         contratacaoRepository.save(contratacao);
