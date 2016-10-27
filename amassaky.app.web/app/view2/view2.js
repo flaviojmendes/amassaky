@@ -11,11 +11,15 @@ angular.module('myApp.view2', ['ngRoute'])
 
 .controller('View2Ctrl', ['$scope','$location', 'minhaService', function($scope, $location, minhaService) {
 
-var validarUsuario = fucntion(){
-
-}
-
 $scope.cadastrarCliente = function(){
+
+console.log($scope.myForm);
+
+	minhaService.insert($scope.user).then(function(){
+
+		alert("cadastrado com sucesso");
+
+	})
 	console.log($scope.user);
 }
 

@@ -1,40 +1,40 @@
 <p><h1>Cadastro de cliente</h1></p>
-<form ng-submit="cadastrarCliente()">
+<form name="myForm" ng-submit="cadastrarCliente()">
 <div>
 	<span>NOME</span>
-	<input type="text" ng-model="user.nome" name="">
+	<input type="text" ng-model="user.nome" name="" required>
 </div>
 <div>
 	<span>CPF</span>
-	<input type="text" ng-model="user.cpf" name="">
+	<input type="text" ng-model="user.cpf" maxlength="11" name="" required>
 </div>
 <div>
 	<span>TELEFONE</span>
-	<input type="number" ng-model="user.telefone" name="">
+	<input type="number" ng-model="user.telefone" name="" required>
 </div>
 <div>
 	<span>CARTÃO</span>
-	<input type="number" ng-model="user.cartao" name="">
+	<input type="number" ng-model="user.numeroCartao" maxlength="16" name="" required>
 </div>
 <div>
 	<span>CVV</span>
-	<input type="number" ng-model="user.cvv" name="">
+	<input type="number" ng-model="user.cvv" maxlength="3" name="" required>
 </div>
 <div>
 	<span>VENCIMENTO</span>
-	<input type="text" ng-model="user.vencimento" name="">
+	<input type="text" ng-model="user.vencimento" name="" required>
 </div>
 <div>
 	<span>EMAIL</span>
-	<input type="email" ng-model="user.email" name="">
+	<input type="email" ng-model="user.email" name="" required>
 </div>
 <div>
 	<span>SENHA</span>
-	<input type="password" ng-model="user.senha" name="">
+	<input type="password" ng-model="user.senha" name="" required>
 </div>
 <div>
 	<span>TERMOS</span>
-	<input type="check" ng-model="termos">
+	<input type="checkbox" ng-model="termos" required>
 </div>
 
 <input type="submit" value="Cadastrar">
