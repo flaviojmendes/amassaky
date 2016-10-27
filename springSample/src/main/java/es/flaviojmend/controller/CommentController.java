@@ -1,9 +1,7 @@
 package es.flaviojmend.controller;
 
-import es.flaviojmend.persistence.entity.Comment;
-import es.flaviojmend.persistence.entity.Employee;
-import es.flaviojmend.service.CommentService;
-import es.flaviojmend.service.EmployeeService;
+import es.flaviojmend.persistence.entity.Cliente;
+import es.flaviojmend.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -18,46 +16,46 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @RestController
-@RequestMapping("/comment")
+@RequestMapping("/cliente")
 public class CommentController {
 
 
     @Autowired
-    CommentService commentService;
+    ClienteService clienteService;
 
-    @RequestMapping(method = RequestMethod.GET)
-    public Iterable<Comment> get() {
-        return commentService.listComments();
-    }
-
+//    @RequestMapping(method = RequestMethod.GET)
+//    public Iterable<Comment> get() {
+//        return clienteService.listComments();
+//    }
+//
 
     @RequestMapping(method = RequestMethod.POST)
-    public ResponseEntity<?> post(@RequestBody Comment comment) {
-        commentService.addComment(comment);
+    public ResponseEntity<?> post(@RequestBody Cliente cliente) {
+        clienteService.cadastrarCliente(cliente);
 
         HttpHeaders httpHeaders = new HttpHeaders();
 
         return new ResponseEntity<>(null, httpHeaders, HttpStatus.CREATED);
     }
 
-    @RequestMapping(method = RequestMethod.PUT)
-    public ResponseEntity<?> put(@RequestBody Comment comment) {
-        HttpHeaders httpHeaders = new HttpHeaders();
-
-        try {
-            commentService.updateComment(comment);
-        } catch (Exception e) {
-            return new ResponseEntity<>(null, httpHeaders, HttpStatus.BAD_REQUEST);
-        }
-
-        return new ResponseEntity<>(null, httpHeaders, HttpStatus.CREATED);
-    }
-
-    @RequestMapping(method = RequestMethod.DELETE)
-    public ResponseEntity<?>  delete(@RequestBody Comment comment) {
-        commentService.deleteComment(comment);
-        HttpHeaders httpHeaders = new HttpHeaders();
-        return new ResponseEntity<>(null, httpHeaders, HttpStatus.OK);
-    }
+//    @RequestMapping(method = RequestMethod.PUT)
+//    public ResponseEntity<?> put(@RequestBody Comment comment) {
+//        HttpHeaders httpHeaders = new HttpHeaders();
+//
+//        try {
+//            clienteService.updateComment(comment);
+//        } catch (Exception e) {
+//            return new ResponseEntity<>(null, httpHeaders, HttpStatus.BAD_REQUEST);
+//        }
+//
+//        return new ResponseEntity<>(null, httpHeaders, HttpStatus.CREATED);
+//    }
+//
+//    @RequestMapping(method = RequestMethod.DELETE)
+//    public ResponseEntity<?>  delete(@RequestBody Comment comment) {
+//        clienteService.deleteComment(comment);
+//        HttpHeaders httpHeaders = new HttpHeaders();
+//        return new ResponseEntity<>(null, httpHeaders, HttpStatus.OK);
+//    }
 
 }
