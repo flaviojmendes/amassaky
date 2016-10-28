@@ -1,0 +1,38 @@
+<div class="container">
+	<h1>Avaliar</h1>
+	<div ng-repeat="massagem in massagens">
+		<form name="{{myForm + massagem.nome}}" ng-submit="avaliar(massagem)">
+			<div class="row">
+				<div class="form-group col-md-3">
+					<span ng-bind="massagem.massagista.nome"></span>
+				</div>
+				<div class="form-group col-md-3">
+					<span ng-bind="massagem.massagista.especialidade"></span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-md-3">
+				<select ng-model="massagem.avaliacao.nota">
+					<option ng-value=""></option>
+					<option ng-value="1">1</option>
+					<option ng-value="2">2</option>
+					<option ng-value="3">3</option>
+					<option ng-value="4">4</option>
+					<option ng-value="5">5</option>
+				</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-md-3">
+					<label for="comentarios">Comentários</label>
+					<input type="text" class="form-control" ng-model="massagem.avaliacao.comentario" name="comentarios" required />
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group col-md-3">
+				<input type="submit" value="Avaliar" name="">
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

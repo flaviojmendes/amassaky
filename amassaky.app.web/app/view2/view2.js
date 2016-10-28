@@ -11,6 +11,10 @@ angular.module('myApp.view2', ['ngRoute'])
     templateUrl: 'view2/contratar.html',
     controller: 'ContratarCtrl'
   })
+  .when('/avaliar', {
+    templateUrl: 'view2/avaliar.html',
+    controller: 'AvaliarCtrl'
+  })
   .when('/profissional', {
     templateUrl: 'view2/profissional.html',
     controller: 'ProfissionalCtrl'
@@ -131,6 +135,18 @@ if(confirmacao){
 			} else if(data.data.result == "cliente") {
 				$location.path("/contratar");
 			}
+		},
+			function(data){
+				alert("Login ou senha incorretos");
+			} 
+		)
+	}
+}])
+.controller('AvaliarCtrl', ['$scope','$location', 'minhaService', function($scope, $location, minhaService) {
+
+	$scope.avaliar = function(massagem){
+
+		minhaService.avaliar(massagem).then(function(data){
 		},
 			function(data, message){
 				alert("erro ao cadastrar "+ data);
