@@ -1,0 +1,49 @@
+<div class="container">
+	<h1>Cadastro de Massagista</h1>
+
+	<form name="myForm" ng-submit="cadastrarProfissional()">
+	<div class="row">
+		<div class="form-group col-md-6">
+			<label for="nome">Nome</label>
+			<input type="text" class="form-control"  ng-model="user.nome" name="nome" required />
+		</div>
+		<div class="form-group col-md-6">
+			<label for="cpf">CPF</label>
+			<input type="text" class="form-control" id="cpf" ng-model="user.cpf" maxlength="11" minlength="11" name="cpf" required>
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group col-md-6">
+			<label for="cpf">Telefone</label>
+			<input type="text" id="telefone" class="form-control" ng-model="user.telefone" minlength="8" minlength="15" name="telefone" required>
+
+			<script>
+			$(document).ready(function($){
+			    $("#telefone").mask("(99) 99999-9999");
+			    $("#cpf").mask("99999999999");
+			});
+			</script>
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="form-group col-md-6">
+			<label for="email">Email</label>
+			<input type="email" class="form-control" ng-model="user.email" name="email" required>
+		</div>
+		<div class="form-group col-md-6">
+			<label for="senha">Senha</label>
+			<input type="password" class="form-control" ng-model="user.senha" name="senha" required>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<input type="checkbox"  ng-model="termos" required>
+			<label for="termos">Eu aceito os termos de uso.</label>
+		</div>
+	</div>
+
+	<input type="submit"  class="btn btn-default" value="Cadastrar">
+
+	</form>
+</div>

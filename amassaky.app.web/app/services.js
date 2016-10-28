@@ -20,6 +20,14 @@
     	})
     }
 
+    self.insertProfissioanl = function(params){
+        return $http({
+            method : 'post',
+            url : 'http://localhost:8080/massagista',
+            data : params
+        })
+    }
+
     self.contratacao = function(params){
         return $http({
             method : 'post',

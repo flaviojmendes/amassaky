@@ -11,6 +11,10 @@ angular.module('myApp.view2', ['ngRoute'])
     templateUrl: 'view2/contratar.html',
     controller: 'ContratarCtrl'
   })
+  .when('/profissional', {
+    templateUrl: 'view2/profissional.html',
+    controller: 'ProfissionalCtrl'
+  })
   ;
 }])
 
@@ -96,5 +100,22 @@ if(confirmacao){
 	}
 }
 
+}])
+
+.controller('ProfissionalCtrl', ['$scope','$location', 'minhaService', function($scope, $location, minhaService) {
+
+	$scope.cadastrarProfissional = function(){
+
+		minhaService.insertProfissional($scope.user).then(function(){
+
+			alert("cadastrado com sucesso");
+
+			$location.path("/contratar");
+		},
+		function(data){
+			alert("erro ao cadastrar "+ data);
+		} 
+		)
+	}
 }])
 ;
