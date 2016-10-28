@@ -1,4 +1,3 @@
-
 <div class="container">
 	<h1>Cadastro de cliente</h1>
 
@@ -37,9 +36,16 @@
 			<label for="cvv">CVV</label>
 			<input type="text" class="form-control" ng-model="user.cvv" maxlength="3" name="cvv" required>
 		</div>
-		<div class="form-group col-md-6">
-			<label for="vencimento">Vencimento</label>
-			<input type="text" class="form-control" ng-model="user.vencimento" name="vencimento" required>
+		<div class="form-group col-md-3">
+			<label for="mesVencimento">Mês Vencimento</label>
+				<select ng-model="selectedMonth" class="form-control" required>
+					<option ng-repeat="mes in meses" ng-value="mes">{{mes}}</option>
+				</select>
+			<div class="form-group col-md-3">
+				<label for="anoVencimento">Ano Vencimento</label>
+				<select ng-model="selectedYear" class="form-control"  required>
+					<option ng-repeat="ano in anos" ng-value="ano">{{ano}}</option>
+				</select>
 		</div>
 	</div>
 	<div class="row">

@@ -16,7 +16,22 @@ angular.module('myApp.view2', ['ngRoute'])
 
 .controller('View2Ctrl', ['$scope','$location', 'minhaService', function($scope, $location, minhaService) {
 
+$scope.meses=[];
+$scope.anos=[];
+
+for (var i = 1 ; i <= 31; i++) {
+	$scope.meses.push(i);
+}
+
+for (var i = 2015 ; i <= 2020; i++) {
+	$scope.anos.push(i);
+}
+
+
 $scope.cadastrarCliente = function(){
+
+var vencimento = $scope.selectedMonth +"/"+ $scope.selectedYear; 
+$scope.user.vencimento = vencimento;
 
 	minhaService.insert($scope.user).then(function(){
 
@@ -40,8 +55,11 @@ $scope.cadastrarCliente = function(){
 
 .controller('ContratarCtrl', ['$scope','$location', 'minhaService', '$window', function($scope, $location, minhaService, $window) {
 	$scope.massagistas = {};
+
+
 	var massagistas = [
 	{
+		id:1,
 		nome : "Joelma",
 		avaliacao : 5,
 		especialidade: "Tantrica",
@@ -49,6 +67,7 @@ $scope.cadastrarCliente = function(){
 		sexo: "f",
 		img : "Capture2.png"
 	},{
+		id:2,
 		nome : "Mario",
 		avaliacao : 5,
 		especialidade: "Tailandesa",
