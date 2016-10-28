@@ -21,8 +21,13 @@
 	<input type="text" ng-model="user.cvv" maxlength="3" name="" required>
 </div>
 <div>
-	<span>VENCIMENTO</span>
-	<input type="text" ng-model="user.vencimento" name="" required>
+<span>VENCIMENTO</span>
+	<select ng-model="selectedMonth" required>
+		<option ng-repeat="mes in meses" ng-value="mes">{{mes}}</option>
+	</select>
+	<select ng-model="selectedYear" required>
+		<option ng-repeat="ano in anos" ng-value="ano">{{ano}}</option>
+	</select>
 </div>
 <div>
 	<span>EMAIL</span>
