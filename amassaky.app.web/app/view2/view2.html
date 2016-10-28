@@ -11,42 +11,47 @@
 		</div>
 		<div class="form-group col-md-6">
 			<label for="cpf">CPF</label>
-			<input type="text" class="form-control" ng-model="user.cpf" maxlength="11" minlength="11" name="cpf" required>
+			<input type="text" class="form-control" id="cpf" ng-model="user.cpf" maxlength="11" minlength="11" name="cpf" required>
 		</div>
 	</div>
 	<div class="row">
 		<div class="form-group col-md-6">
 			<label for="cpf">Telefone</label>
-			<input type="text" id="telefone" class="form-control" ng-model="user.telefone" minlength="8" minlength="9" name="telefone" required>
+			<input type="text" id="telefone" class="form-control" ng-model="user.telefone" minlength="8" minlength="15" name="telefone" required>
 
 			<script>
 			$(document).ready(function($){
 			    $("#telefone").mask("(99) 99999-9999");
+			    $("#cartao").mask("9999999999999999");
+			    $("#cpf").mask("99999999999");
+			    $("#cvv").mask("999");
 			});
 			</script>
 		</div>
 
 		<div class="form-group col-md-6">
 			<label for="cartao">Cartão</label>
-			<input type="text" class="form-control" ng-model="user.numeroCartao" maxlength="16" minlength="16" name="cartao" required>
+			<input type="text" class="form-control" ng-model="user.numeroCartao" maxlength="16" minlength="16" id="cartao" name="cartao" required>
 		</div>
 	</div>
 	<div class="row">
 		<div class="form-group col-md-6">
 			<label for="cvv">CVV</label>
-			<input type="text" class="form-control" ng-model="user.cvv" maxlength="3" name="cvv" required>
+			<input type="text" class="form-control" ng-model="user.cvv" id="cvv" maxlength="3" name="cvv" required>
 		</div>
 		<div class="form-group col-md-3">
 			<label for="mesVencimento">Mês Vencimento</label>
-				<select ng-model="selectedMonth" class="form-control" required>
-					<option ng-repeat="mes in meses" ng-value="mes">{{mes}}</option>
-				</select>
-			<div class="form-group col-md-3">
-				<label for="anoVencimento">Ano Vencimento</label>
-				<select ng-model="selectedYear" class="form-control"  required>
-					<option ng-repeat="ano in anos" ng-value="ano">{{ano}}</option>
-				</select>
+			<select name="mesVencimento" ng-model="selectedMonth" class="form-control" required>
+				<option ng-repeat="mes in meses" ng-value="mes">{{mes}}</option>
+			</select>
 		</div>
+		<div class="form-group col-md-3">
+			<label for="anoVencimento">Ano Vencimento</label>
+			<select ng-model="selectedYear" name="anoVencimento" class="form-control"  required>
+				<option ng-repeat="ano in anos" ng-value="ano">{{ano}}</option>
+			</select>
+		</div>
+		
 	</div>
 	<div class="row">
 		<div class="form-group col-md-6">
