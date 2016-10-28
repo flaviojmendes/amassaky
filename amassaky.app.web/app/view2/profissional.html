@@ -1,7 +1,9 @@
 <div class="container">
 	<h1>Cadastro de Massagista</h1>
 
-	<form name="myForm" ng-submit="cadastrarProfissional()">
+
+
+	<form name="myForm" ng-submit="cadastrarCliente()">
 	<div class="row">
 		<div class="form-group col-md-6">
 			<label for="nome">Nome</label>
@@ -11,6 +13,7 @@
 			<label for="cpf">CPF</label>
 			<input type="text" class="form-control" id="cpf" ng-model="user.cpf" maxlength="11" minlength="11" name="cpf" required>
 		</div>
+
 	</div>
 	<div class="row">
 		<div class="form-group col-md-6">
@@ -23,9 +26,20 @@
 			    $("#cpf").mask("99999999999");
 			});
 			</script>
+			
 		</div>
-		
+		<div class="form-group col-md-6">
+			<label for="especialidade">Especialidade</label>
+
+			<select name="especialidade" class="form-control" ng-model="user.especialidade" ng-init="user.especialidade = 'tantrica'">
+				<option ng-value="tantrica">Tantrica</option>
+				<option ng-value="ayurvedica">Ayurvédica</option>
+				<option ng-value="tailandesa">Tailandesa</option>
+				<option ng-value="quick">Quick</option>
+			</select>
+		</div>
 	</div>
+	
 	<div class="row">
 		<div class="form-group col-md-6">
 			<label for="email">Email</label>
@@ -37,8 +51,18 @@
 		</div>
 	</div>
 	<div class="row">
+	<div class="col-md-6">
+			<label for="sexoOption">Sexo</label>
+			<select name="sexoOption" class="form-control" ng-model="sexo">
+				<option value="m" selected="selected"> Masculino </option>
+				<option value="f"> Feminino </option>
+			</select>
+		</div>
+		
+	</div>
+	<div class="row">
 		<div class="col-md-6">
-			<input type="checkbox"  ng-model="termos" required>
+			<input type="checkbox" ng-model="termos" required>
 			<label for="termos">Eu aceito os termos de uso.</label>
 		</div>
 	</div>
