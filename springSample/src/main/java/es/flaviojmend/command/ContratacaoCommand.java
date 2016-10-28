@@ -9,6 +9,10 @@ public class ContratacaoCommand {
 
     private Long idCliente;
 
+    private String especialidade;
+
+    private String sexo;
+
     public Long getIdCliente() {
         return idCliente;
     }
@@ -24,10 +28,6 @@ public class ContratacaoCommand {
     public void setEspecialidade(String especialidade) {
         this.especialidade = especialidade;
     }
-
-    private String especialidade;
-
-    private String sexo;
 
     public String getSexo() {
         return sexo;

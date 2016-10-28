@@ -13,7 +13,6 @@ public interface MassagistaRepository extends CrudRepository<Massagista, Long> {
 
     List<Massagista> findByEspecialidadeAndSexo(String especialidade, String sexo);
 
-
-
+    List<Massagista> findBySenhaAndEmail(String senha, String email);
 }
 
