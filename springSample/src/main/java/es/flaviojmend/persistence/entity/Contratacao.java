@@ -18,6 +18,18 @@ public class Contratacao {
     @JoinColumn(name = "id_massagista")
     private Massagista massagista;
 
+    @ManyToOne
+    @JoinColumn(name = "id_avaliacao")
+    private Avaliacao avaliacao;
+
+    public Avaliacao getAvaliacao() {
+        return avaliacao;
+    }
+
+    public void setAvaliacao(Avaliacao avaliacao) {
+        this.avaliacao = avaliacao;
+    }
+
     public Long getIdContratacao() {
         return idContratacao;
     }

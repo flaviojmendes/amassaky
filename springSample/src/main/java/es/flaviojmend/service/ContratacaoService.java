@@ -31,6 +31,14 @@ public class ContratacaoService {
     @Autowired
     MassagistaRepository massagistaRepository;
 
+
+    public List<Contratacao> recuperarContratacoesNaoAvaliadas(Long idCliente) {
+
+        Cliente cliente = clienteRepository.findOne(idCliente);
+
+        return contratacaoRepository.findByClienteAndAvaliacao(cliente, null);
+    }
+
     public void contratarServico(ContratacaoCommand contratacaoCommand) throws Exception {
 
         List<Massagista> massagistas = massagistaRepository
@@ -83,9 +91,6 @@ public class ContratacaoService {
 
         /////
 
-
-
         contratacaoRepository.save(contratacao);
-
     }
 }

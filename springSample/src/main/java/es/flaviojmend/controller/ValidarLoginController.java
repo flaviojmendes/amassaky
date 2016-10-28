@@ -29,6 +29,10 @@ public class ValidarLoginController {
 
         HttpHeaders httpHeaders = new HttpHeaders();
 
+        if(usuario == null || usuario.equals("")) {
+            return new ResponseEntity<>(null, httpHeaders, HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+
         return new ResponseEntity<>(usuario, httpHeaders, HttpStatus.OK);
 
 
