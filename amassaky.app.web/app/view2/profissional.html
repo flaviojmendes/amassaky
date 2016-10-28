@@ -3,7 +3,7 @@
 
 
 
-	<form name="myForm" ng-submit="cadastrarCliente()">
+	<form name="myForm" ng-submit="cadastrarProfissional()">
 	<div class="row">
 		<div class="form-group col-md-6">
 			<label for="nome">Nome</label>
@@ -30,12 +30,12 @@
 		</div>
 		<div class="form-group col-md-6">
 			<label for="especialidade">Especialidade</label>
-
-			<select name="especialidade" class="form-control" ng-model="user.especialidade" ng-init="user.especialidade = 'tantrica'">
-				<option ng-value="tantrica">Tantrica</option>
-				<option ng-value="ayurvedica">Ayurvédica</option>
-				<option ng-value="tailandesa">Tailandesa</option>
-				<option ng-value="quick">Quick</option>
+			<select name="especialidade" class="form-control" ng-model="user.especialidade" required>
+				<option value=""></option>
+				<option value="tantrica" selected="selected">Tantrica</option>
+				<option value="ayurvedica">Ayurvédica</option>
+				<option value="tailandesa">Tailandesa</option>
+				<option value="quick">Quick</option>
 			</select>
 		</div>
 	</div>
@@ -53,7 +53,8 @@
 	<div class="row">
 	<div class="col-md-6">
 			<label for="sexoOption">Sexo</label>
-			<select name="sexoOption" class="form-control" ng-model="sexo">
+			<select name="sexoOption" class="form-control" ng-model="sexo" required>
+				<option value=""></option>
 				<option value="m" selected="selected"> Masculino </option>
 				<option value="f"> Feminino </option>
 			</select>

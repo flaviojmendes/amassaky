@@ -108,15 +108,12 @@ if(confirmacao){
 
 	$scope.cadastrarProfissional = function(){
 
-		minhaService.insertProfissional($scope.user).then(function(){
-
+		minhaService.insertProfissioanl($scope.user).then(function(){
 			alert("cadastrado com sucesso");
-
-			$location.path("/contratar");
 		},
-		function(data){
-			alert("erro ao cadastrar "+ data);
-		} 
+			function(data, message){
+				alert("erro ao cadastrar "+ data);
+			} 
 		)
 	}
 }])
