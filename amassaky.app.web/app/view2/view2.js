@@ -15,6 +15,10 @@ angular.module('myApp.view2', ['ngRoute'])
     templateUrl: 'view2/profissional.html',
     controller: 'ProfissionalCtrl'
   })
+  .when('/login', {
+    templateUrl: 'view2/login.html',
+    controller: 'LoginCtrl'
+  })
   ;
 }])
 
@@ -110,6 +114,19 @@ if(confirmacao){
 
 		minhaService.insertProfissioanl($scope.user).then(function(){
 			alert("cadastrado com sucesso");
+		},
+			function(data, message){
+				alert("erro ao cadastrar "+ data);
+			} 
+		)
+	}
+}])
+.controller('LoginCtrl', ['$scope','$location', 'minhaService', function($scope, $location, minhaService) {
+
+	$scope.login = function(){
+
+		minhaService.login($scope.login).then(function(){
+			$location.path("/contratar")
 		},
 			function(data, message){
 				alert("erro ao cadastrar "+ data);
