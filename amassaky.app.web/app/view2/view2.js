@@ -28,6 +28,8 @@ for (var i = 2015 ; i <= 2020; i++) {
 }
 
 
+
+
 $scope.cadastrarCliente = function(){
 
 var vencimento = $scope.selectedMonth +"/"+ $scope.selectedYear; 
