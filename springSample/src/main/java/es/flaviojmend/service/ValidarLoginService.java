@@ -32,14 +32,14 @@ public class ValidarLoginService {
         List<Massagista> massagistas = massagistaRepository
                 .findBySenhaAndEmail(loginCommand.getSenha(), loginCommand.getLogin());
         if (massagistas.size() > 0){
-            return "massagista";
+            return "{\"result\":\"massagista\"}";
         };
 
         List<Cliente> clientes = clienteRepository
                     .findBySenhaAndEmail(loginCommand.getSenha(), loginCommand.getLogin());
 
         if (clientes.size() > 0){
-            return "cliente";
+            return "{\"result\":\"cliente\"}";
         };
             return null;
     }

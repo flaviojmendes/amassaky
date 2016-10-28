@@ -2,19 +2,19 @@
 	<h1>Login</h1>
 	<form name="myForm" ng-submit="login()">
 		<div class="row">
-			<div class="form-group col-md-2">
+			<div class="form-group col-md-3 offset-md-4">
 				<label for="login">Login</label>
-				<input type="email" class="form-control"  ng-model="login.login" name="nome" required />
+				<input type="email" class="form-control"  ng-model="user.login" name="nome" required />
 			</div>
 		</div>
 		<div class="row">
-			<div class="form-group col-md-2">
+			<div class="form-group col-md-3 offset-md-4">
 				<label for="senha">Senha</label>
-				<input type="password" class="form-control" name="senha" ng-model="login.senha" required>
+				<input type="password" class="form-control" name="senha" ng-model="user.senha" required>
 			</div>
 		</div>
 		<div class="row"></div>
-		<div class="form-group">
+		<div class="form-group text-center">
 			<input type="submit"  class="btn btn-default" value="Login">
 		</div>
 	</form>

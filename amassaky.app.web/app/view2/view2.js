@@ -125,8 +125,12 @@ if(confirmacao){
 
 	$scope.login = function(){
 
-		minhaService.login($scope.login).then(function(){
-			$location.path("/contratar")
+		minhaService.login($scope.user).then(function(data){
+			if(data.data.result == "massagista") {
+				$location.path("/view1");
+			} else if(data.data.result == "cliente") {
+				$location.path("/contratar");
+			}
 		},
 			function(data, message){
 				alert("erro ao cadastrar "+ data);
