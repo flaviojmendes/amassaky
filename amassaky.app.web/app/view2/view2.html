@@ -42,13 +42,15 @@
 		<div class="form-group col-md-3">
 			<label for="mesVencimento">Mês Vencimento</label>
 			<select name="mesVencimento" ng-model="selectedMonth" class="form-control" required>
-				<option selected='{{$index == 3}}' ng-repeat="mes in meses" ng-value="mes">{{mes}}</option>
+				<option value=""></option>
+				<option ng-repeat="mes in meses" ng-value="mes">{{mes}}</option>
 			</select>
 		</div>
 		<div class="form-group col-md-3">
 			<label for="anoVencimento">Ano Vencimento</label>
 			<select ng-model="selectedYear" name="anoVencimento" class="form-control"  required>
-				<option selected='{{$index == 3}}' ng-repeat="ano in anos" ng-value="ano">{{ano}}</option>
+			<option value=""></option>
+				<option ng-repeat="ano in anos" ng-value="ano">{{ano}}</option>
 			</select>
 		</div>
 		
