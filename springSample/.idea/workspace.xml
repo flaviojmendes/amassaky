@@ -29,18 +29,7 @@
           <activation />
         </task>
         <projects_view>
-          <tree_state>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="springSample" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-            </PATH>
-          </tree_state>
+          <tree_state />
         </projects_view>
       </state>
     </system>
@@ -50,6 +39,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file leaf-file-name="MassagistaService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/service/MassagistaService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+              <folding />
+=======
       <file leaf-file-name="ContratacaoService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/service/ContratacaoService.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,20 +78,36 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="ClienteService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/service/ClienteService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="25" column="0" selection-start-line="16" selection-start-column="4" selection-end-line="25" selection-end-column="0" />
+=======
       <file leaf-file-name="ContratacaoRepository.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/repo/ContratacaoRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file leaf-file-name="MassagistaController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/MassagistaController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+=======
       <file leaf-file-name="ContratacaoCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/command/ContratacaoCommand.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -138,6 +151,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
               <folding />
             </state>
           </provider>
@@ -374,7 +388,11 @@
     </option>
     <option name="modificationStamps">
       <map>
+<<<<<<< HEAD
+        <entry key="$PROJECT_DIR$" value="2955164669000" />
+=======
         <entry key="$PROJECT_DIR$" value="2955219948000" />
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
         <entry key="$PROJECT_DIR$/../../springSample" value="2955061916000" />
       </map>
     </option>
@@ -551,17 +569,21 @@
         <option value="$PROJECT_DIR$/src/test/java/es.flaviojmend/ClienteTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/es.flaviojmend/service/ClienteTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/service/ClienteService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/MassagistaController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Contratacao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Massagista.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/repo/MassagistaRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/command/ContratacaoCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/ClienteController.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/es.flaviojmend/service/ContratacaoService.java" />
         <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/service/ContratacaoService.java" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Massagista.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/service/MassagistaService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/MassagistaController.java" />
+=======
         <option value="$PROJECT_DIR$/src/test/java/es.flaviojmend/service/ContratacaoTest.java" />
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
       </list>
     </option>
   </component>
@@ -573,9 +595,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="835" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -672,6 +693,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -942,7 +964,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -961,7 +982,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1387,8 +1408,13 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
+=======
     <frame x="0" y="23" width="1440" height="835" extended-state="6" />
     <editor active="false" />
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1397,17 +1423,21 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20849934" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="545" y="183" width="350" height="514" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" x="545" y="183" width="350" height="514" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3984064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
       <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3994778" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1441,14 +1471,178 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Massagista.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1765#1766#0" expanded="true" />
+            <element signature="e#1805#1806#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/service/ContratacaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1933#2167#0" expanded="true" />
+            <element signature="e#2166#2167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/MassagistaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/command/ContratacaoCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="e#306#307#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#482#483#0" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/ContratacaoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Contratacao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/repo/ContratacaoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/repo/MassagistaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="81" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Massagista.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1398#1399#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1765#1766#0" expanded="true" />
+            <element signature="e#1805#1806#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1486,7 +1680,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1556,33 +1752,36 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/es/flaviojmend/controller/EmployeeTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/resources/index.html" />
     <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Employee.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Cliente.java">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/test/java/es.flaviojmend/service/ClienteTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/service/ClienteService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="480">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/ClienteController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="23" />
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+=======
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/Main.java">
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
@@ -1590,6 +1789,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/repo/ContratacaoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="78" selection-start-line="9" selection-start-column="78" selection-end-line="9" selection-end-column="78" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/ContratacaoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="29" column="61" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/command/ContratacaoCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="e#306#307#0" expanded="false" />
+            <element signature="e#348#349#0" expanded="false" />
+            <element signature="e#388#389#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#482#483#0" expanded="false" />
+            <element signature="e#532#533#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/service/ContratacaoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="69" column="60" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+          <folding>
+            <element signature="e#1933#2167#0" expanded="true" />
+            <element signature="e#2166#2167#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+=======
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
     <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Contratacao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1598,17 +1862,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Cliente.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="102" column="0" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/entity/Massagista.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        <state relative-caret-position="300">
+          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1398#1399#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
+            <element signature="e#567#568#0" expanded="true" />
+            <element signature="e#593#594#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#693#694#0" expanded="true" />
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#797#798#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#911#912#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+            <element signature="e#988#989#0" expanded="true" />
+            <element signature="e#1023#1024#0" expanded="true" />
+            <element signature="e#1077#1078#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#1156#1157#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+            <element signature="e#1255#1256#0" expanded="true" />
+            <element signature="e#1287#1288#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1357#1358#0" expanded="true" />
+            <element signature="e#1391#1392#0" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+            <element signature="e#1525#1526#0" expanded="true" />
+            <element signature="e#1575#1576#0" expanded="true" />
+            <element signature="e#1607#1608#0" expanded="true" />
+            <element signature="e#1634#1635#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1765#1766#0" expanded="true" />
+            <element signature="e#1805#1806#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/persistence/repo/ClienteRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1620,14 +1932,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/MassagistaController.java">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/service/ClienteService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+          <caret line="25" column="0" selection-start-line="16" selection-start-column="4" selection-end-line="25" selection-end-column="0" />
+=======
     <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/command/ContratacaoCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-42">
@@ -1656,10 +1966,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/service/MassagistaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="44" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+=======
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -1698,12 +2015,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/service/ContratacaoService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/es/flaviojmend/controller/MassagistaController.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="390">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding />
+=======
         <state relative-caret-position="288">
           <caret line="71" column="52" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
           <folding>
@@ -1720,6 +2043,7 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+>>>>>>> 2e4837d7c2f1a9a171cbb51e9bbb9a932b2abe31
         </state>
       </provider>
     </entry>
