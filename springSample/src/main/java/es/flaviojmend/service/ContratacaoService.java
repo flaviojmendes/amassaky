@@ -39,10 +39,12 @@ public class ContratacaoService {
 
         Contratacao contratacao = new Contratacao();
 
+        Massagista massagista = massagistas.get(0);
+
         Cliente cliente = clienteRepository.findOne(contratacaoCommand.getIdCliente());
 
         contratacao.setCliente(cliente);
-        contratacao.setMassagista(massagistas.get(0));
+        contratacao.setMassagista(massagista);
 
 
         /////
@@ -67,7 +69,7 @@ public class ContratacaoService {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress("amassakyapp@gmail.com"));
             message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse(massagistas.get(0).getEmail()));
+                    InternetAddress.parse(massagista.getEmail()));
             message.setSubject("Nova Massagem");
             message.setText("Voce tem nova massagem");
 

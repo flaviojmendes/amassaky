@@ -1,28 +1,62 @@
-<h1>Contratar Massagista</h1>
-<form>	
-<div>
-<label for="radioM">homem</label>
-<input type="radio" ng-model="massagem.sexo" ng-click="filterMassagista('m')" id="radioM" ng-value="m" name="sexoradio">
-<label for="radioF">mulher</label>
-<input type="radio" ng-model="massagem.sexo" ng-click="filterMassagista('f')" id="radioF" ng-value="f" name="sexoradio">
+<div class="container">
+	<h1>Contratar Massagista</h1>
+	<form>	
+	<div class="row">
+		<div class="form-group col-md-6">
+			<h4>Escolha o sexo do(a) seu/sua massagista:</h4>
+			<label for="radioM">Homem</label>
+			<input type="radio" ng-model="massagem.sexo" ng-click="filterMassagista('m')" id="radioM" ng-value="m" name="sexoradio">
+			<label for="radioF">Mulher</label>
+			<input type="radio" ng-model="massagem.sexo" ng-click="filterMassagista('f')" id="radioF" ng-value="f" name="sexoradio">
+		</div>
+	</div>
+	<div class="row">
+		<div class="form-group col-md-6">
+			<h4>Escolha a especialidade:</h4>
+			<select ng-model="massagem.tipo">
+				<option ng-value="tantrica">Tantrica</option>
+				<option ng-value="ayurvedica">Ayurvédica</option>
+				<option ng-value="tailandesa">Tailandesa</option>
+				<option ng-value="quick">Quick</option>
+			</select>
+		</div>
+	</div>
+
+	<div ng-repeat="massagista in massagistas | filter:massagem.tipo ">
+		<div class="row">
+			<div class="form-group col-md-6">
+				<div class="row">
+					<div class="col-md-12">
+						<span> <i><img src={{massagista.img}}></i> 	</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<label ng-bind="massagista.nome"></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<label ng-bind="massagista.especialidade"></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<label ng-bind="'nota:'+ massagista.avaliacao"></label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<button ng-click="contratar(massagista)" class="btn btn-default"> Contratar </button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</form>
+	<script type="text/javascript">
+		window.onload = function () { filterMassagista(''); }
+
+	</script>
 </div>
-<div>	
-<select ng-model="massagem.tipo">
-	<option ng-value="tantrica">Tantrica</option>
-	<option ng-value="ayurvedica">Ayurvédica</option>
-	<option ng-value="tailandesa">Tailandesa</option>
-	<option ng-value="quick">Quick</option>
-</select>
-</div>
-
-<div ng-repeat="massagista in massagistas | filter:massagem.tipo ">
-<span> <i><img src={{massagista.img}}></i> 	</span>
-<label ng-bind="massagista.nome"></label>
-<label ng-bind="massagista.especialidade"></label>
-<label ng-bind="'nota:'+ massagista.avaliacao"></label>
-
-<button ng-click="contratar(massagista)"> Contratar </button>
-
-</div>
-
-</form>

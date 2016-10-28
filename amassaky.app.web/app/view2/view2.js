@@ -42,16 +42,16 @@ $scope.cadastrarCliente = function(){
 	$scope.massagistas = {};
 	var massagistas = [
 	{
-		nome : "joelma",
+		nome : "Joelma",
 		avaliacao : 5,
-		especialidade: "tantrica",
+		especialidade: "Tantrica",
 		email: "joelma@gmail.com",
 		sexo: "f",
 		img : "Capture2.png"
 	},{
-		nome : "mario",
+		nome : "Mario",
 		avaliacao : 5,
-		especialidade: "tailandesa",
+		especialidade: "Tailandesa",
 		email: "mario@gmail.com",
 		sexo:"m",
 		img : "Capture.png"

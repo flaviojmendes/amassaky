@@ -37,6 +37,10 @@ dependencies {
     // https://mvnrepository.com/artifact/javax.mail/mail
     compile group: 'javax.mail', name: 'mail', version: '1.4.7'
 
+    // https://mvnrepository.com/artifact/org.mockito/mockito-all
+    compile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+
+
     testCompile("junit:junit")
 
 

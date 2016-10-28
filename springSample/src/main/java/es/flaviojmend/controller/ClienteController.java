@@ -36,24 +36,5 @@ public class ClienteController {
         return new ResponseEntity<>(null, httpHeaders, HttpStatus.CREATED);
     }
 
-//    @RequestMapping(method = RequestMethod.PUT)
-//    public ResponseEntity<?> put(@RequestBody Comment comment) {
-//        HttpHeaders httpHeaders = new HttpHeaders();
-//
-//        try {
-//            clienteService.updateComment(comment);
-//        } catch (Exception e) {
-//            return new ResponseEntity<>(null, httpHeaders, HttpStatus.BAD_REQUEST);
-//        }
-//
-//        return new ResponseEntity<>(null, httpHeaders, HttpStatus.CREATED);
-//    }
-//
-//    @RequestMapping(method = RequestMethod.DELETE)
-//    public ResponseEntity<?>  delete(@RequestBody Comment comment) {
-//        clienteService.deleteComment(comment);
-//        HttpHeaders httpHeaders = new HttpHeaders();
-//        return new ResponseEntity<>(null, httpHeaders, HttpStatus.OK);
-//    }
 
 }
