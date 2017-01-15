@@ -1,5 +1,6 @@
-<<<<<<< HEAD
-### Board
+### Amassaky
+
+This App was made to the [CSD](https://www.scrumalliance.org/certifications/practitioners/csd-certification) course ministred by [AdaptWorks](http://www.adaptworks.com.br/).
 
 ##### How to start environment
 
@@ -9,6 +10,3 @@
 ###### Execute:
 
       sudo docker-compose up -d
-=======
-# amassaky
->>>>>>> 5c778d543ec6ddbb2cfdcbcb65d892b5a04edffa
